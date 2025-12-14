@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: fchg_data
+    database: dm2-nov-25
+    schema: fchg_data
+    tables:
+      - name: population
+      - name: stations
+      - name: train_plan
+      - name: train_movement

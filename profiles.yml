@@ -1,0 +1,11 @@
+my_dbt_profile:
+  target: dev
+  outputs:
+    dev:
+      type: bigquery
+      method: service-account
+      project: dm2-nov-25
+      dataset: deutsche_bahn   # <-- change this
+      threads: 4
+      location: europe-west1
+      keyfile: /path/to/service_account.json
